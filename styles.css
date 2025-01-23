@@ -6,6 +6,9 @@
     font-family: Quicksand;
     font-size: 1.25rem;
   }
+  .top-right-btn {
+    display: none;
+  }
 
   marquee {
     background-color: #01acfd;
@@ -111,7 +114,7 @@ a{
   align-items: center;
   flex-direction: column;
   gap:30px;
-  width 50%;
+  
 }
 
 .curriboxes{
@@ -229,8 +232,9 @@ a{
   grid-row: span 2; 
 }
 .card-grid .boxes {
-  width: 250px;
+  width: 300px;
 }
+
 .card-grid .boxes .card-heading {
   font-size: 0.8rem;
 }
@@ -289,7 +293,7 @@ footer {
     margin: 20px 0;
   }
 
-  /* nav bar */
+  
   .nav-bar {
     padding: 10px 20px;
     border-bottom: 1px solid black;
@@ -362,5 +366,137 @@ footer {
   .outro {
     padding-right: 0;
   }
+}
+
+@media screen and (max-width: 400px) {
+
+
+  body {
+    font-size: 1rem;
+  }
+  section {
+    padding: 0 16px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .content {
+    margin: 40px 0;
+  }
+  .navbar {
+    padding: 10px 16px;
+  }
+  .nav-bar h1 {
+    font-size: 1.5rem;
+  }
+  .nav-links,
+  .contact-btn {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .hero-page {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  .hero-content {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-page img {
+    width: 100%;
+  }
+  .curriboxes {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .boxes {
+    width: 75%;
+    padding: 20px;
+    margin : 10px;
+  }
+  .stories {
+    padding: 40px 16px;
+  }
+  .big-card {
+    display: none;
+  }
+  .stories .card {
+    width: 160px;
+  }
+  footer {
+    padding: 40px 16px;
+    grid-template-columns: 1fr;
+  }
+  .outro {
+    padding-right: 0;
+  }
+  .banner-content {
+    width: 100%;
+    text-align: center;
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  .banner-content button {
+    width: 100%;
+  }
+
+  .logoh1 {
+    display: none;
+  }
+  .nav-links,
+  .contact-btn {
+    display: none;
+  }
+  .top-right-btn {
+    display: block;
+    align-self: center;
+    top: 10px;
+    right: 10px; 
+  }
+
+  .top-right-btn button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .top-right-btn img {
+    width: 40px; 
+    height: 40px;
+    transform: translateY(-55%) translateX(110%);
+  }
+
+.banner{
+  flex-direction: column-reverse;
+  gap: 16px;
+  align-items: center;
+}
+.banner-pic img{
+  width: 100%;
+}
+.card-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+main{
+  margin-top: 20px;
+}
+
+.card-grid .boxes {
+  width: 160px;
+}
+
+.heading{
+
+}
+
+
 }
 
