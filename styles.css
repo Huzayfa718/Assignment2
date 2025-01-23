@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Quicksand;
+    font-size: 1.25rem;
+  }
+
+  marquee {
+    background-color: #01acfd;
+    color: white;
+    padding: 8px 0;
+    font-weight: 700;
+  }
+
+  section {
+    padding: 60px 140px;
+  }
+  .section-heading {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .section-content {
+    margin: 80px 0;
+  }
+
+ .orangetext {
+        color: orange;
+    }
+    .bluetext {
+        color: blue;
+    }
+ button {
+        border-radius: 12px;
+        width: 197px;
+        padding: 10px;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+ }
+.flexy {
+            display: flex;
+            align-items: center;
+    }
+
+.navbar {
+        justify-content: space-between;
+        font-weight: 700;
+        padding: 20px 140px;
+    }
+  
+
+
+
