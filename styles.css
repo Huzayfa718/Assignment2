@@ -157,17 +157,210 @@ a{
   font-size: 1rem;
 }
 
-.control-buttons {
-  justify-self: center;
+
+
+.stories {
+  background: url("./B11-A2-Kids-School/assets/bg.png"),
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  flex-direction: column;
+}
+.stories .content {
+  gap: 20px;
+  justify-content: center;
+}
+.stories .boxes {
+  padding: 0;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: none;
+  padding-bottom: 30px;
+}
+.stories .boxes img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+
+.big-card h1,
+.big-card p {
+  padding: 0 50px;
+}
+
+.stories .card h1 {
+  padding: 0 20px;
+}
+.img-container {
+  position: relative;
+}
+
+.batch {
+  position: absolute;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 1rem;
+  border-radius: 48px;
+  padding: 16px 24px;
+  background-color: #3cd8e8;
+  width: fit-content;
+  left: 10%;
+  transform: translateY(-55%);
+}
+.magenda-bg {
+  background-color: #5d58f0;
+}
+.green-bg {
+  background-color: #95b226;
+}
+.small-batch {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.control-buttons i {
-  background-color: var(--orange);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 3rem;
-  justify-content: center;
-  color: var(--white);
+.big-card {
+  grid-row: span 2; 
+}
+.card-grid .boxes {
+  width: 250px;
+}
+.card-grid .boxes .card-heading {
+  font-size: 0.8rem;
+}
+.only-mobile {
+  display: none;
+}
+.stories button {
+  background-color: black;
+}
+
+footer {
+  background-color: #01acfd;
+  color: white;
+  padding: 80px 140px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+}
+.outro {
+  padding-right: 120px;
+}
+.outro-heading {
+  font-size: 2rem;
+  gap: 8px;
+}
+.outro-heading img {
+  width: 80px;
+}
+.outro p {
+  padding: 0;
+  margin: 16px 0;
+  font-size: 1rem;
+}
+.about-school .links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 8px;
+}
+.about-school .links a {
+  color: white;
+  font-size: 1rem;
+}
+
+.keep-in-touch .social-media {
+  margin-top: 20px;
+  gap: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    padding: 0 20px;
+  }
+  .section-content {
+    margin: 20px 0;
+  }
+
+  /* nav bar */
+  .nav-bar {
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+  }
+  .nav-bar h1 {
+    display: none;
+  }
+  .nav-links,
+  .contact-btn {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+
+  .section-heading {
+    font-size: 26px;
+    margin-top: 60px;
+    margin-bottom: 32px;
+  }
+  /* hero-page */
+  .hero-page {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 0;
+  }
+  .hero-content {
+    text-align: center;
+    align-items: center;
+    width: 90%;
+  }
+  .hero-content h1 {
+    margin-top: 24px;
+    font-size: 2rem;
+  }
+  .hero-page img {
+    transform: translateY(0);
+  }
+
+  /* curriculum */
+  .card-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Control Button */
+  .control-buttons {
+    display: none;
+  }
+
+  /* stories */
+  .stories {
+    padding-bottom: 56px;
+  }
+  .big-card {
+    display: none;
+  }
+  .stories .card {
+    width: 180px;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+  }
+  .outro {
+    padding-right: 0;
+  }
 }
 
