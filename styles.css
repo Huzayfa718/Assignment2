@@ -17,20 +17,20 @@
   section {
     padding: 60px 140px;
   }
-  .section-heading {
+  .heading {
     text-align: center;
     font-size: 3rem;
   }
-  .section-content {
+  .content {
     margin: 80px 0;
   }
 
- .orangetext {
+.orangetext {
         color: orange;
     }
-    .bluetext {
+.bluetext {
         color: blue;
-    }
+}
  button {
         border-radius: 12px;
         width: 197px;
@@ -51,7 +51,123 @@
         font-weight: 700;
         padding: 20px 140px;
     }
-  
+.logoh1{
+    font-size : 3rem;
+    color: black;
+}
+a{
+        text-decoration: none;
+        cursor: pointer;
+}
+.nav-links{
+    gap: 32px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    }
+    .logo {
+        gap: 8px;
+    }
 
+#home {
+        color: orange;
+}
+#about {
+        color: #01acfd;
+     }
+ #facilities {
+        color: #05d4df;
+}
+#admissions {
+        color: #5d58ef;
+     }
+.contact-btn {
+        background-color: orange;
+        
+    }
+.banner{
+  justify-content: space-between;
+}
+.banner-content {
+  align-items: flex-start;
+  gap: 24px;
+  flex-direction: column;
+  width: 50%;
+}
+.banner-content h1{
+  font-size: 3rem;
+  color: black;
+}
+.banner-content p{
+  padding : 0;
+}
+.banner-content button{
+  background-color: black;
+}
 
+.curriculum {
+  background: url("assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  flex-direction: column;
+  gap:30px;
+  width 50%;
+}
+
+.curriboxes{
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 30 px;
+}
+
+.boxes{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  width: 300px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05) inset;
+  padding: 40px;
+}
+
+.blue-gradient {
+  background: linear-gradient(#def5ff, white);
+  button {
+    color: #64c8ff;
+  }
+}
+.yellow-gradient {
+  background: linear-gradient(#fff4dc, white);
+  button {
+    color: #f0aa00;
+  }
+}
+.violet-gradient {
+  background: linear-gradient(#f2e8ff, white);
+  button {
+    color: #8700ff;
+  }
+}
+
+.boxes button{
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.control-buttons {
+  justify-self: center;
+  gap: 20px;
+}
+.control-buttons i {
+  background-color: var(--orange);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 3rem;
+  justify-content: center;
+  color: var(--white);
+}
 
